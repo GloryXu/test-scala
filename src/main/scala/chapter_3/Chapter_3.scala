@@ -3,11 +3,12 @@ package chapter_3
 object Chapter_3 {
 
   def main(args: Array[String]): Unit = {
-    //    forMethod
+//      forMethod
 
-    testList
+//    testList
 
-    listCons
+//    listCons
+    listCreate
   }
 
   def forMethod(): Unit = {
@@ -28,11 +29,11 @@ object Chapter_3 {
   }
 
   def testList(): Unit = {
-    val list = List(1, 2, 3);
+    val list = List(1, 2, 3)
 
     val oneTwo = List(1, 2)
     val threeFor = List(3, 4)
-    val oneTwoThreeFor = oneTwo ::: threeFor;
+    val oneTwoThreeFor = oneTwo ::: threeFor
     println(oneTwoThreeFor)
   }
 
@@ -43,6 +44,14 @@ object Chapter_3 {
     // twoThree.::(1)
     val oneTwoThree = 1 :: twoThree
     println(oneTwoThree)
+  }
+
+  def listCreate(): Unit ={
+    val thrill = "Will"::"fill"::"until"::Nil
+
+    println(thrill.sortWith((s, t) => s.charAt(0).toLower < t.charAt(0).toLower))
+
+    println(thrill.tail)
   }
 
 }

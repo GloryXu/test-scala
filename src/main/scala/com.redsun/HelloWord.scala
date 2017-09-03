@@ -1,6 +1,7 @@
 package com.redsun
 
 object HelloWord {
+
   def sayHello(x: String): Unit = {
     println("hello," + x);
   }
